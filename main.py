@@ -1,0 +1,1 @@
+import GEOparsegse = GEOparse.get_GEO(filepath="geo_data/GSE17448_family.soft.gz")print(gse.metadata)first_10_ids = list(gse.gsms.keys())[:10]# Print summary for each# for gsm_id in first_10_ids:#     gsm = gse.gsms[gsm_id]#     print(f"\n=== {gsm_id} ===")#     print(gsm.metadata)gsm = gse.gsms[first_10_ids[0]]print(gsm.table.head())
